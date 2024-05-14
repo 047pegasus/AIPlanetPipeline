@@ -1,0 +1,25 @@
+{
+  "name": "aiplanetpipeline",
+  "version": "1.0.0",
+  "description": "Test Application for Canary Release",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/047pegasus/AIPlanetPipeline.git"
+  },
+  "keywords": [
+    "aiplanet"
+  ],
+  "author": "Tanishq Agarwal",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/047pegasus/AIPlanetPipeline/issues"
+  },
+  "homepage": "https://github.com/047pegasus/AIPlanetPipeline#readme",
+  "dependencies": {
+    "express": "^4.19.2"
+  }
+}

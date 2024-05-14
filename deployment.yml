@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: aiplanet
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: aiplanet
+  template:
+    metadata:
+      labels:
+        app: aiplanet
+    spec:
+      containers:
+      - name: aiplanet
+        image: ghcr.io/047pegasus/aiplanet:assignment
+        ports:
+        - containerPort: 8089
