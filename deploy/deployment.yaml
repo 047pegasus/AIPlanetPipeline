@@ -1,5 +1,5 @@
-apiVersion: apps/v1
-kind: Deployment
+apiVersion: argoproj.io/v1alpha1
+kind: Rollout
 metadata:
   name: aiplanet
 spec:
@@ -17,3 +17,8 @@ spec:
         image: ghcr.io/047pegasus/aiplanet:assignment
         ports:
         - containerPort: 8089
+  strategy:
+    canary:
+      steps:
+      - setWeight: 10
+        pause: {}
