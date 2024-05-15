@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
       - name: aiplanet
-        image: ghcr.io/047pegasus/aiplanet:assignment
+        image: ghcr.io/047pegasus/aiplanet:assignmentv1
         ports:
         - containerPort: 8089
   strategy:

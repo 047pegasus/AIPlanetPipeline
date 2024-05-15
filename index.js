@@ -16,6 +16,11 @@ app.get('/contact', (req, res) => {
     res.send("Author: Tanishq Agarwal \nEmail: tanishqoct11@gmail.com");
 });
 
+//New Feature for Canary Release 1.1
+app.get('/newfeature', (req, res) => {
+    res.send("This is a new feature added in the Canary Release 1.1");
+});
+
 app.listen(7788, () => {
     console.log("Server started at port 7788");
 });
